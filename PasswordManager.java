@@ -93,7 +93,7 @@ public class PasswordManager extends JFrame implements ActionListener {
 		
 	}
 	/*Generates random string based on checkboxes selected*/  
-	private String generatePassword(char[] characters, int length)
+	public String generatePassword(char[] characters, int length)
 	{
 		/*Random number generators to determine if next character
 		*is number, lowercase, uppercase or special, and to select
@@ -152,7 +152,7 @@ public class PasswordManager extends JFrame implements ActionListener {
 		return generatedString; 
 	}
 	
-	private String checkPassword(String password)
+	public String checkPassword(String password)
 	{
 		/*Shows strength of the password */
 		int strength = 0; 
